@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDU GUARD</title>
+<link rel="stylesheet" href="3.css">
+</head>
+<body>
+
+<!-- واجهة تسجيل الدخول -->
+<div class="login-container" id="loginPage">
+<h2> تسجيل الدخول</h2>
+<p>مرحبًا بك في نظام المتابعة الذكية للطلاب</p>
+<input type="text" id="username" placeholder="اسم المستخدم" required>
+<input type="password" id="password" placeholder="كلمة المرور" required>
+<button onclick="loginUser()">تسجيل الدخول</button>
+</div>
+
+<!-- لوحة الطالب -->
+<div class="dashboard" id="dashboard">
+<header>
+<h1> نظام المتابعة الذكية</h1>
+<nav>
+<ul>
+<li><a href="#" onclick="showSection('subjects')">المواد</a></li>
+<li><a href="#" onclick="showSection('questions')">الأسئلة</a></li>
+<li><a href="#" onclick="showSection('exams')">الامتحانات</a></li>
+<li><a href="#" onclick="showSection('alerts')">التنبيهات</a></li>
+<li><a href="#" onclick="showSection('parent')">اتصال بولي الأمر</a></li>
+<li><button class="logout-btn" onclick="logout()">تسجيل الخروج</button></li>
+</ul>
+</nav>
+</header>
+
+<!-- قسم المدرسين (سلايدر) -->
+<section class="teachers-section">
+<h2>المدرسون المتخصصون</h2>
+<div class="slider">
+<button class="prev">&#10094;</button>
+<div class="slides">
+<div class="teacher-card">
+<h3>Mr.Mohamed Salah</h3>
+<p>مدرس اللغة العربية</p>
+<p>0117388420</p>
+</div>
+
+<div class="slides">
+<div class="teacher-card">
+<h3>Mr.Mohamed Abd el maaboud</h3>
+<p>مدرس الفيزياء</p>
+<p>01201755570</p>
+</div>
+
+<div class="teacher-card">
+<h3>Mr.Khaled Sakr</h3>
+<p>مدرسة الكيمياء</p>
+<p> 01087654321</p>
+</div>
+
+<div class="teacher-card">
+<h3>Mr.Mohamed Ali Hodaip</h3>
+<p>مدرس اللغة الإنجليزية</p>
+<p>01009559936</p>
+</div>
+
+<div class="teacher-card">
+<h3>Mr.Ahmed El Gohary</h3>
+<p>مدرسة الأحياء</p>
+<p>01223484750</p>
+</div>
+</div>
+<button class="next">&#10095;</button>
+</div>
+</section>
+
+<div class="content" id="content">
+<div class="card">
+<h3>أهلاً بصاحب المجد،وصاعد القمم، في رحاب العلم والنجاح. </h3>
+<p>اختر من القائمة بالأعلى لبدء المتابعة الدراسية الخاصة بك.</p>
+</div>
+</div>
+
+<footer>
+© 2025 - جميع الحقوق محفوظة لنظام المتابعة الذكية
+</footer>
+</div>
+
+<script src="3.js"></script>
+
+</body>
+</html>
